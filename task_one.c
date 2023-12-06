@@ -8,7 +8,7 @@
  * @count - count the number of character printed
  * @c - character
  * @s - string
- * Return: 0
+ * Return: count
 **/
 
 int _printf(const char *format, ...)
