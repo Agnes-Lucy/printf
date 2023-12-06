@@ -1,6 +1,13 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+/**
+ * _printf - a function that produces output according to a format
+ * @count - count the number of character printed
+ * @c - character
+ * Return: 0
+**/
+
 int _printf(const char *format, ...) 
 {
 	int count;
