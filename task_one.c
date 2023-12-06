@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -28,15 +27,13 @@ int _printf(const char *format, ...)
 			switch (*format)
 			{
 				case 'c':
-					putchar(va_arg(args, int));
-					count++;
+					count += putchar(va_arg(args, int));
 				break;
 				case 's':
 					count += printf("%s", va_arg(args, char *));
 				break;
 				case '%':
-					putchar('%');
-					count++;
+					 count += putchar('%');
 				break;
 			default:
 					break;
@@ -44,8 +41,7 @@ int _printf(const char *format, ...)
 
 		} else
 			{
-				putchar(*format);
-				count++;
+				count += putchar(*format);
 			}
 		format++;
 	}
