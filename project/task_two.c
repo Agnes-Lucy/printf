@@ -3,11 +3,11 @@
 #include "main.h"
 
 /**
- * _printf - a function that produces output according to a format
+ * _printf - Custom printf function for handling %d and %i specifier
  * @format: a pointer to a format string containing conversion specifiers
  * @count - count the number of character printed
  * @c - character
- * Return: count
+ * Return: Number of characters printed (excluding null byte)
 **/
 
 int _printf(const char *format, ...)
